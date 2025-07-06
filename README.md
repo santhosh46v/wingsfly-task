@@ -1,97 +1,89 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# ✅ Task Manager - React Native
+A modern **Task Management app** built using **React Native CLI** with smooth animations and modular architecture.
 
-# Getting Started
+---
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## 🚀 Setup Instructions
 
-## Step 1: Start Metro
+### 📦 Prerequisites
+- Node.js (v14 or later)
+- npm (v6 or later) or Yarn (v1.22 or later)
+- React Native CLI (`npm install -g react-native-cli`)
+- Android Studio (for Android development)
+- Xcode (for iOS development - Mac only)
+- A code editor (e.g., VS Code)
+- Android emulator or iOS simulator
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+---
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## 🛠 Installation
 
-```sh
-# Using npm
-npm start
-
-# OR using Yarn
-yarn start
+```bash
+git clone https://github.com/santhosh46v/wingsfly-task.git
+cd wingsfly-task
+npm install
+# or
+yarn install
 ```
 
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+### For iOS (Mac only):
+```bash
+cd ios && pod install && cd ..
 ```
 
-### iOS
+## ▶️ Running the App
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+### Android:
+```bash
+npx react-native run-android
 ```
 
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
+### iOS:
+```bash
+npx react-native run-ios
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+## 🧪 App Features
 
-```sh
-# Using npm
-npm run ios
+• **Horizontal Date Picker**: Static date display (15-21) with selected date highlighting
+• **Today's Quote**: Quote section with progress bar display
+• **Task List**: Static task information display with icons, titles, times, and tags
+• **Floating Action Button**: Bottom-right positioned "+" button
+• **Bottom Drawer Modal**: Slide-up animation with 4 task creation options
+• **Smooth Animations**: React Native Animated API implementation
+• **Modular Architecture**: Clean, reusable component structure
 
-# OR using Yarn
-yarn ios
+## 📁 Folder Structure
+
+```
+task-manager-app/
+├── android/                    # Android-specific files
+├── ios/                       # iOS-specific files
+├── src/
+│   ├── components/            # Reusable UI components
+│   │   ├── BottomDrawer.jsx   # Bottom modal drawer component
+│   │   ├── DatePicker.jsx     # Horizontal date picker
+│   │   ├── FloatingButton.jsx # Floating action button
+│   │   ├── QuoteCard.jsx      # Today's quote component
+│   │   └── TaskList.jsx       # Task list component
+│   ├── screens/               # Screen components
+│   │   └── HomeScreen.jsx     # Main home screen
+│   ├── assets/                # Static assets
+│   │   ├── icons/             # App icons
+│   │   └── images/            # Image assets
+│   └── utils/                 # Utility functions
+├── App.tsx                    # Main app component
+├── index.jsx                  # Entry point
+├── package.json               # Dependencies and scripts
+└── README.md                  # Project documentation
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## 🎥 Demo Video
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+Watch the app in action:
 
-## Step 3: Modify your app
+👉 [View Demo](https://www.loom.com/share/dac465fd37b24fce8b83d8826393b771?sid=1a27a6c6-ae38-4149-a93f-2d79836e7ead)
 
-Now that you have successfully run the app, let's make changes!
+## ✨ License
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This project is open source and free to use.
