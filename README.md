@@ -45,13 +45,13 @@ npx react-native run-ios
 
 ## 🧪 App Features
 
-- • **Horizontal Date Picker**: Static date display (15-21) with selected date highlighting
-- • **Today's Quote**: Quote section with progress bar display
-- • **Task List**: Static task information display with icons, titles, times, and tags
-- • **Floating Action Button**: Bottom-right positioned "+" button
-- • **Bottom Drawer Modal**: Slide-up animation with 4 task creation options
-- • **Smooth Animations**: React Native Animated API implementation
-- • **Modular Architecture**: Clean, reusable component structure
+-  **Horizontal Date Picker**: Static date display (15-21) with selected date highlighting
+-  **Today's Quote**: Quote section with progress bar display
+-  **Task List**: Static task information display with icons, titles, times, and tags
+-  **Floating Action Button**: Bottom-right positioned "+" button
+-  **Bottom Drawer Modal**: Slide-up animation with 4 task creation options
+-  **Smooth Animations**: React Native Animated API implementation
+-  **Modular Architecture**: Clean, reusable component structure
 
 ## 📁 Folder Structure
 
